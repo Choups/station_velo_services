@@ -14,7 +14,7 @@ body{
 #fond{
     background-color: white;
     margin:auto;
-    max-width: 1200px;
+    max-width: 1920px;
     min-width: 300px;
     box-shadow: 0.1em 0.1em 0.5em black;
 }
@@ -22,13 +22,16 @@ body{
 nav{
     background-color: black;
     position:fixed;
-    width:100%;
-    max-width: 1200px;
+    width:100vw;
+    max-width: 1920px;
     z-index: 10;
+    box-shadow: 0.1em 0.1em 0.5em black;
 }
 
-.liens-logo{
-    text-decoration: none;
+.liens-logo img:hover{
+    filter: grayscale(1) brightness(200%);
+    -webkit-filter: grayscale(1) brightness(200%);
+    transition-duration: 0.8s;
 }
 
 
@@ -41,13 +44,14 @@ nav{
 
 .liens-nav:hover{
     color:white;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     background-color: green;
 }
 
 nav ul {
     display:flex;
-    flex-wrap: wrap;
+    margin-right:10px;
+    flex-wrap: nowrap;
     list-style: none;
     justify-content: space-around;
     align-items: center;
@@ -64,29 +68,33 @@ nav li{
 
 #carousel{
 display:flex;
+flex-direction: column;
 padding-top:40px;
-height:400px;
+height:100vh;
+max-height: 1200px;
 background-position: center;
 background-image: url(img/carousel.jpg);
 background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+}
+
+#carousel img{
+    width: 60px;
+    height: 60px;
 }
 
 
 h1{
-    justify-content: center;
     color: white;
-    text-align: center;
     margin:auto;
     font-size: 3rem;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-header{
-    margin-bottom: 20px;
+    text-shadow: darkgreen 0.2em 0.2em 0.4em;
 }
 
 #staff h2{
+    padding: 60px 0px 40px 0px;
     display:block;
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em grey;
