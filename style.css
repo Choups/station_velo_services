@@ -1,5 +1,3 @@
-/* juska 768   de 769 a 992   de 993 a 1200 de 1201 à ++++   */
-
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +43,7 @@ nav{
 .liens-nav:hover{
     color:white;
     transition-duration: 0.8s;
-    background-color: green;
+    background-image: linear-gradient(to bottom, #052e01, #053a08, #05470d, #065412, #076217);
 }
 
 nav ul {
