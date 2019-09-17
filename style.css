@@ -8,6 +8,11 @@
   }
 
 body{
+    background-image: linear-gradient(to top, #4eaa52, #3d9241, #2c7b31, #1a6521, #054f11);
+}
+
+#fond{
+    background-color: white;
     margin:auto;
     max-width: 1200px;
     min-width: 300px;
@@ -114,7 +119,7 @@ header{
 
 #staff div article:hover p{
     color: lightgreen;
-    background-color: black;
+    background-color: #333;
     transition-duration: 1s;
 }
 
