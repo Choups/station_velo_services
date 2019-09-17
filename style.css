@@ -1,3 +1,5 @@
+/* juska 768   de 769 a 992   de 993 a 1200 de 1201 à ++++   */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,67 +7,82 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+body{
+    margin:auto;
+    max-width: 1200px;
+}
+
 nav{
     background-color: black;
+    position:fixed;
+    width:100%;
+    max-width: 1200px;
 }
 
 .liens-logo{
-    text-decoration: none;;
-}
-
-.liens-logo img{
-    
+    text-decoration: none;
 }
 
 .liens-nav, .liens-nav:visited{
     text-decoration: none;
     color: green;
-    padding:20px;
+    padding:20px 10px;
     line-height: 40px;
 }
 
 .liens-nav:hover{
     color:white;
-    background-color: grey;
+    background-color: green;
 }
 
 nav ul {
     display:flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 }
 
 nav li{
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #logo {
+    display:none;
     margin-right:auto;
 }
 
 #carousel{
-    display:flex;
-    background-color: grey;
-    height:300px;
+display:flex;
+padding-top:40px;
+height:400px;
+background-position: center;
+background-image: url(img/carousel.jpg);
+background-repeat: no-repeat;
 }
 
+
 h1{
+    justify-content: center;
+    color: white;
     text-align: center;
     margin:auto;
+    font-size: 3rem;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 header{
     margin-bottom: 20px;
 }
 
-h2{
+#staff h2{
     display:block;
     text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em grey;
 }
 
-#staff{
+#staff div{
     display:flex;
     flex-direction: column;
 }
@@ -75,16 +92,41 @@ h2{
     width:320px;
     text-align:center;
     padding:10px;
+    margin-bottom: 60px;
 }
 
 #staff article p{
     padding:10px;
-    border-radius:15px;
-    background-color: grey;
+    border-radius:40px;
+    background-color: lightgrey;
+    box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 #staff article img{
     margin:20px auto;
     border-radius:50%;
-    background-color: grey;
+    background-color: green;
+}
+
+@media screen and (min-width:769px){
+
+#staff div {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    justify-content: flex-end;
+}
+
+.liens-nav, .liens-nav:visited{
+    padding:20px 20px;
+}
+
+#logo {
+    display:flex;
+    margin-right:auto;
+    padding-left:10px;
+}
+
 }
