@@ -107,6 +107,7 @@ header{
 
 #staff article img{
     margin:20px auto;
+    opacity: 0.6;
     border-radius:50%;
     background-color: green;
 }
@@ -114,6 +115,11 @@ header{
 #staff div article:hover p{
     color: lightgreen;
     background-color: black;
+    transition-duration: 1s;
+}
+
+#staff div article:hover img{
+    opacity: 1;
     transition-duration: 1s;
 }
 
