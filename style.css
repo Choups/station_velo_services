@@ -1,3 +1,5 @@
+/* juska 768   de 769 a 992   de 993 a 1200 de 1201 à ++++   */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    margin: auto;
+body{
+    margin:auto;
     max-width: 1200px;
+    min-width: 300px;
 }
 
 #services {
@@ -101,6 +104,118 @@ textarea {
 
 #adresse div p {
     padding: 10px 0px;
+  }
+
+
+
+nav{
+    background-color: black;
+    position:fixed;
+    width:100%;
+    max-width: 1200px;
+}
+
+.liens-logo{
+    text-decoration: none;
+}
+
+
+.liens-nav, .liens-nav:visited{
+    text-decoration: none;
+    color: green;
+    padding:20px 10px;
+    line-height: 40px;
+}
+
+.liens-nav:hover{
+    color:white;
+    transition-duration: 1s;
+    background-color: green;
+}
+
+nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    overflow: hidden;
+}
+
+#logo {
+    display:none;
+    margin-right:auto;
+}
+
+#carousel{
+display:flex;
+padding-top:40px;
+height:400px;
+background-position: center;
+background-image: url(img/carousel.jpg);
+background-repeat: no-repeat;
+}
+
+
+h1{
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin:auto;
+    font-size: 3rem;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+#staff h2{
+    display:block;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em grey;
+}
+
+#staff div{
+    display:flex;
+    flex-direction: column;
+}
+
+#staff article{
+    margin:auto;
+    width:320px;
+    text-align:center;
+    padding:10px;
+    margin-bottom: 60px;
+}
+
+#staff article p{
+    padding:10px;
+    border-radius:40px;
+    background-color: lightgrey;
+    box-shadow: 0.1em 0.1em 0.2em grey;
+}
+
+#staff article img{
+    margin:20px auto;
+    opacity: 0.6;
+    border-radius:50%;
+    background-color: green;
+}
+
+#staff div article:hover p{
+    color: lightgreen;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+#staff div article:hover img{
+    opacity: 1;
+    transition-duration: 1s;
 }
 
 
@@ -108,7 +223,17 @@ textarea {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
     #gps {
-        display: none;
+        display: none;}
+}
+
+@media screen and (min-width:340px){
+    #logo {
+        display:flex;
+        margin-right:auto;
+        padding-left:10px;
+    }
+    nav ul {
+        justify-content: flex-end;
     }
 }
 
@@ -139,3 +264,17 @@ textarea {
     }
 }
 
+@media screen and (min-width:769px){
+
+    #staff div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+
+
+    .liens-nav, .liens-nav:visited{
+    padding:20px 20px;
+    }
+
+}
