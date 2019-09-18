@@ -367,6 +367,7 @@ h1 {
     background-color: green;
     border-radius: 15px;
     padding: 10px;
+    box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 #article img {
@@ -414,6 +415,7 @@ select {
     height: 30px;
     margin: 10px;
     border-radius: 10px;
+    background-color: #3d9241;
 }
 
 textarea {
