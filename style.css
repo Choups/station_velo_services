@@ -333,13 +333,14 @@ h1 {
 }
 
 #services article {
-  flex-direction: column;
-  width: 80%;
-  text-align: center;
-  margin: 20px auto;
-  background-color: green;
-  border-radius: 15px;
-  padding: 10px;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: green;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 #article img {
@@ -383,10 +384,11 @@ input {
 }
 
 select {
-  width: 80%;
-  height: 30px;
-  margin: 10px;
-  border-radius: 10px;
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #3d9241;
 }
 
 textarea {
