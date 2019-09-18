@@ -16,7 +16,7 @@
     margin-bottom: 20px;
 }
 
-/* petit menu*/
+/*********************************** petit menu*****************************************************/
 
 #tarif h2 {
     padding: 1vw;
@@ -34,7 +34,7 @@
     border-radius: 40px;
 }
 
-/*Tableau*/
+/************************************* Tableau *****************************************************/
 table{
     border-top: 1px black solid;
     padding-top: 10px;
@@ -82,91 +82,63 @@ td, .titre{
     font-size: 4vw;
 }
 
-/* footer*/
+/******************************** footer************************************************************/
 footer {
     display: flex;
     align-items: center;
     background-color:lightgrey;
+    padding: 3px;
 }
-.ul_footer_menu, .ul_footer_reseaux{
-    list-style: none;
-}
-.reseaux_lien{
-    display: none;
-}
-
 .ul_footer_reseaux{
-    margin-left: auto;
-    display: flex;  
-    margin-top: 1%;
-    margin-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+  margin: auto;
 }
-.ul_footer_reseaux li img{
-    border-radius: 100%;
-    margin-left: 2vw;
+.ul_footer_reseaux li a img{
+  border-radius: 20px;
+}
+/****************************  Debut Media queries tarif et footer *********************************/
 
-}
-.ul_footer_menu{
-    margin-left: 15px;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    width: 40%;
-}
-.footer_div{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-.ul_footer_menu div li a{
-    text-decoration: none;
-    color: olivedrab;
-    font-size: 0.5em;
-    }
-}
-.footer_div li{
-    margin-right: 5px;
-}
-
- /*Mobile Styles*/
+ /*************************** Mobile Styles ********************************************************/
  @media screen and (max-width: 768px){
     .li_tarif h3{
         display: none;
     }
 }
+/************************** Tablets and desktop **************************************************/
 
-/* Tablet Styles */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-
-    .li_tarif h3{
-        display: block;
-    }
-    .li_tarif a, .ul_footer_reseaux a {
-        text-decoration: none;
-    }
-    .li_tarif img{
-        display: none;
-    }
-    .li_tarif h3{
-        border: 3px groove lightgrey;
-        background-color: lightgrey;
-        color: black;
-    }
-    table{
-        width: 80%;
-        margin-left: 10%;
-    }
-    .titre, .catégorie, .espace, .normal_td, td{
-        font-size: 1em;
-    }
-    caption{
-       width: 45%;
-   }
-   .footer_div li{
-       font-size: 2em;
-   }
+@media screen and (min-width: 769px) and (max-width: 1200px){
+  .titre, .catégorie, .espace, .normal_td, td{
+    font-size: 1em;
 }
-
+.li_tarif img{
+  display: none;
+}
+.li_tarif h3{
+  border: 3px groove lightgrey;
+  background-color: lightgrey;
+  color: black;
+}
+.li_tarif a, .ul_footer_reseaux a {
+  text-decoration: none;
+}
+.footer_div li{
+  font-size: 2em;
+}
+.tableau{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+table{
+  width: 45%;
+  margin: 0px;
+}
+}
+/*********************************** Fin Media Queries  tarif et footer ***************************/
 * {
   margin: 0;
   padding: 0;
