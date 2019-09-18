@@ -17,11 +17,6 @@
 
 /*********************************** petit menu*****************************************************/
 
-#tarif h2 {
-  padding: 1vw;
-  margin-bottom: 2vw;
-  text-align: center;
-}
 #tarif ul {
   display: flex;
   justify-content: space-around;
@@ -34,53 +29,48 @@
 }
 
 /************************************* Tableau *****************************************************/
+caption h3{
+    padding:40px 10px 5px 10px;
+}
+
 table {
   border-top: 1px black solid;
   padding-top: 10px;
   width: 90%;
   margin-left: 5%;
 }
-caption {
-  margin: 4vw 2vw 2vw 2vw;
-  font-size: 3vw;
-  border: 1px black solid;
-  color: white;
-  border-radius: 10px;
-  background-color: lightgrey;
-}
+
 .catégorie {
   text-decoration: underline;
   text-align: left;
   padding: 6px;
   border-radius: 20px;
-  font-size: 4vw;
 }
 
 td,
 .titre {
-  border: 1px solid palegreen;
+  border: 1px solid #9DCF9A;
   text-align: center;
-  font-size: 2.7vw;
   border-radius: 10px;
 }
 .rien,
 .catégorie {
   border: none;
 }
+
 .espace {
+    background-color: #9DCF9A;
+}
+
+.espace, .normal_td, .catégorie {
+padding-left: 15px;
   text-align: left;
   margin-left: 5px;
-  background-color: palegreen;
-  font-size: 4vw;
 }
+
 .titre {
-  background-color: palegreen;
+  background-color: #9DCF9A;
   width: 23%;
-}
-.normal_td {
-  text-align: left;
-  padding-left: 6px;
-  font-size: 4vw;
 }
 
 /******************************** footer************************************************************/
@@ -103,27 +93,17 @@ footer {
 }
 /****************************  Debut Media queries tarif et footer *********************************/
 
-/*************************** Mobile Styles ********************************************************/
-@media screen and (max-width: 768px) {
-  .li_tarif h3 {
-    display: none;
-  }
-}
 /************************** Tablets and desktop **************************************************/
 
 @media screen and (min-width: 769px) {
   .titre, .catégorie, .espace, .normal_td, td {
     font-size: 1em;
   }
-  .li_tarif img {
+  .li_tarif {
     display: none;
   }
-  .li_tarif h3 {
-    border: 3px groove lightgrey;
-    background-color: lightgrey;
-    color: black;
-  }
-  .li_tarif a, .ul_footer_reseaux a {
+
+  .ul_footer_reseaux a {
     text-decoration: none;
   }
   .footer_div li {
@@ -167,7 +147,7 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: #111;
   position: fixed;
   width: 100vw;
   max-width: 1920px;
@@ -246,7 +226,7 @@ h1 {
   text-shadow: darkgreen 0.2em 0.2em 0.4em;
 }
 
-#staff h2 {
+h2 {
   padding: 60px 0px 40px 0px;
   display: block;
   text-align: center;
@@ -269,15 +249,15 @@ h1 {
 #staff article p {
   padding: 10px;
   border-radius: 40px;
-  background-color: lightgrey;
+  background-image: linear-gradient(to bottom, #d4d4d4, #d9dbde, #dbe4e7, #deecec, #e5f4ec);
   box-shadow: 0.1em 0.1em 0.2em grey;
+  color:teal;
 }
 
 #staff article img {
   margin: 20px auto;
   opacity: 0.6;
   border-radius: 50%;
-  background-color: green;
 }
 
 #staff div article:hover p {
@@ -332,7 +312,8 @@ h1 {
     width: 80%;
     text-align: center;
     margin: 20px auto;
-    background-color: green;
+    color:white;
+    background-image: linear-gradient(to right bottom, #c9c9c9, #b9b9b9, #a8a8a9, #999999, #89898a, #86898e, #7e8a92, #758b93, #729da2, #73afa7, #81c0a4, #9dcf9a);
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0.1em 0.1em 0.2em grey;
@@ -349,18 +330,13 @@ h1 {
   transform: scale(1.1);
   color: white;
   transition-duration: 0.8s;
-  background-image: linear-gradient(
-    to bottom,
-    #052e01,
-    #053a08,
-    #05470d,
-    #065412,
-    #076217
-  );
+  background-image: linear-gradient(to left top, #c9c9c9, #b9b9b9, #a8a8a9, #999999, #89898a, #86898e, #7e8a92, #758b93, #729da2, #73afa7, #81c0a4, #9dcf9a);
+  
 }
 
 #article p {
-  text-align: justify;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 form {
