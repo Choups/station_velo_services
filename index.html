@@ -25,16 +25,16 @@
                             /></a>
                         </li>
                         <li>
-                            <a class="liens-nav" href="#Services">Services</a>
+                            <a class="liens-nav" href="#services">Services</a>
                         </li>
                         <li>
-                            <a class="liens-nav" href="#Services">Tarifs</a>
+                            <a class="liens-nav" href="#tarif">Tarifs</a>
                         </li>
                         <li>
                             <a class="liens-nav" href="#staff">Staff</a>
                         </li>
                         <li>
-                            <a class="liens-nav" href="#Services">Contact</a>
+                            <a class="liens-nav" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,7 +42,7 @@
                 <div id="carousel">
                     <h1>Station Vélo Services</h1>
                     <div>
-                        <a href="#staff"
+                        <a href="#services"
                             ><img src="img/down.gif" alt="flêche vers le bas"
                         /></a>
                     </div>
@@ -167,8 +167,8 @@
 
                         <tr>
                             <td class="rien"></td>
-                            <td class="titre">Tout Compris*</td>
-                            <td class="titre">Classique**</td>
+                            <td class="titre"> VIP </td>
+                            <td class="titre">Classique</td>
                         </tr>
                         <tr>
                             <td class="catégorie">Roues:</td>
@@ -211,7 +211,7 @@
                             <td>8€</td>
                         </tr>
                         <tr>
-                            <td class="catégorie">Transmission/Vitesse</td>
+                            <td class="catégorie">Transmission</td>
                             <td class="rien"></td>
                             <td class="rien"></td>
                         </tr>
@@ -423,24 +423,14 @@
 
             <section id="staff">
                 <h2>Le Staff</h2>
-                <div>
+                <div id="divwrap">
                     <article>
-                        <img
-                            src="img/avatar.png"
+                        <div id="jujudiv"><img
+                            src="img/juju1.jpg"
                             alt="Julie"
                             width="300px"
                             height="300px"
-                        />
-                        <p class="hover">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Hic officia, inventore nihil suscipit nobis
-                            delectus maxime incidunt cum deserunt assumenda
-                            ducimus, itaque deleniti optio iure. Dolor eos quos
-                            error laboriosam.
-                        </p>
-                    </article>
-                    <article>
-                        <img src="img/avatar.png" alt="Maxime" />
+                        /></div>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Hic officia, inventore nihil suscipit nobis
@@ -450,8 +440,20 @@
                         </p>
                     </article>
                     <article>
-                        <img src="img/avatar.png" alt="Alex" />
-                        <p>
+                        <div id="maxdiv">
+                        <img src="img/max1.jpg" alt="Maxime" />
+                        </div><p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic officia, inventore nihil suscipit nobis
+                            delectus maxime incidunt cum deserunt assumenda
+                            ducimus, itaque deleniti optio iure. Dolor eos quos
+                            error laboriosam.
+                        </p>
+                    </article>
+                    <article>
+                        <div id="alexdiv">
+                        <img src="img/alex1.jpg" alt="Alex" />
+                        </div>  <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Hic officia, inventore nihil suscipit nobis
                             delectus maxime incidunt cum deserunt assumenda
@@ -487,7 +489,7 @@
                     rows="10"
                     placeholder="votre message"
                 ></textarea>
-                <input id="button" type="button" value="Réparer !" />
+                <input id="button" type="button" value="Envoyer" />
             </form>
 
             <section id="adresse">
@@ -501,11 +503,13 @@
                 <div>
                     <h3>Numéro de téléphone</h3>
                     <p>
-                        05 ** ** ** **
+                        05 42 42 42 42
                     </p>
                 </div>
                 <div id="gps">
-                    <h3>Point GPS</h3>
+                    <!--<iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=station%20velo%20service&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+                    -->
+                    <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=station%20velo%20services&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </section>
 
@@ -516,17 +520,17 @@
                 <ul class="ul_footer_reseaux">
                     <li>
                         <a href="##"
-                            ><img src="https://via.placeholder.com/32"
+                            ><img src="img/fb.png"
                         /></a>
                     </li>
                     <li>
                         <a href="##"
-                            ><img src="https://via.placeholder.com/32"
+                            ><img src="img/tw.png"
                         /></a>
                     </li>
                     <li>
                         <a href="##"
-                            ><img src="https://via.placeholder.com/32"
+                            ><img src="img/is.png"
                         /></a>
                     </li>
                 </ul>
