@@ -41,7 +41,7 @@ table {
 }
 
 .catégorie {
-  text-decoration: underline;
+  font-weight:bold;
   text-align: left;
   padding: 6px;
   border-radius: 20px;
@@ -49,7 +49,7 @@ table {
 
 td,
 .titre {
-  border: 1px solid #9DCF9A;
+  border: 1px solid teal;
   text-align: center;
   border-radius: 10px;
 }
@@ -58,18 +58,18 @@ td,
   border: none;
 }
 
-.espace {
-    background-color: #9DCF9A;
-}
-
 .espace, .normal_td, .catégorie {
 padding-left: 15px;
   text-align: left;
   margin-left: 5px;
 }
 
+.espace{
+  background-color: rgb(173, 218, 218); 
+}
+
 .titre {
-  background-color: #9DCF9A;
+  background-color: rgb(173, 218, 218);
   width: 23%;
 }
 
@@ -164,7 +164,7 @@ nav {
 .liens-nav,
 .liens-nav:visited {
   text-decoration: none;
-  color: green;
+  color: teal;
   padding: 20px 10px;
   line-height: 40px;
 }
@@ -172,14 +172,7 @@ nav {
 .liens-nav:hover {
   color: white;
   transition-duration: 0.8s;
-  background-image: linear-gradient(
-    to bottom,
-    #052e01,
-    #053a08,
-    #05470d,
-    #065412,
-    #076217
-  );
+  background-image: linear-gradient(to right bottom, #025750, #046a5d, #117e68, #229272, #36a67a);
 }
 
 nav ul {
@@ -223,7 +216,7 @@ h1 {
   margin: auto;
   font-size: 3rem;
   color: white;
-  text-shadow: darkgreen 0.2em 0.2em 0.4em;
+  text-shadow: teal 0.2em 0.2em 0.4em;
 }
 
 h2 {
