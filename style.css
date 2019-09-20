@@ -30,6 +30,7 @@
 
 /************************************* Tableau *****************************************************/
 caption h3 {
+    text-align: left;
     padding: 40px 10px 5px 10px;
 }
 
@@ -79,7 +80,7 @@ td,
 footer {
     display: flex;
     align-items: center;
-    background-color: grey;
+    background-image: linear-gradient(to top, #000000, #111111, #1c1c1c, #272626, #323131);
     padding: 3px;
 }
 .ul_footer_reseaux {
@@ -112,9 +113,7 @@ footer {
     .ul_footer_reseaux a {
         text-decoration: none;
     }
-    .footer_div li {
-        font-size: 2em;
-    }
+    
     .tableau {
         display: flex;
         justify-content: space-around;
@@ -360,63 +359,55 @@ h2 {
     flex-direction: column;
 }
 
+#services h3{
+    padding-top:10px;
+}
+
 #services article {
     flex-direction: column;
     width: 80%;
     text-align: center;
     margin: 20px auto;
-    color: white;
+    color: teal;
     background-image: linear-gradient(
         to right bottom,
-        #c9c9c9,
-        #b9b9b9,
-        #a8a8a9,
-        #999999,
-        #89898a,
-        #86898e,
-        #7e8a92,
-        #758b93,
-        #729da2,
-        #73afa7,
-        #81c0a4,
-        #9dcf9a
+        #d4d4d4,
+        #d9dbde,
+        #dbe4e7,
+        #deecec,
+        #e5f4ec
     );
     border-radius: 15px;
-    padding: 10px;
+    padding-bottom:10px;
     box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 #article img {
-    margin: 10px;
     border-radius: 25% 10%;
-    width: 80%;
+    width:80%;
+    margin-top:20px;
     text-align: justify;
+    border: solid white 1px;
 }
 
 #article article:hover {
     transform: scale(1.1);
-    color: white;
+    color: teal;
     transition-duration: 0.8s;
     background-image: linear-gradient(
         to left top,
-        #c9c9c9,
-        #b9b9b9,
-        #a8a8a9,
-        #999999,
-        #89898a,
-        #86898e,
-        #7e8a92,
-        #758b93,
-        #729da2,
-        #73afa7,
-        #81c0a4,
-        #9dcf9a
+        #d4d4d4,
+        #d9dbde,
+        #dbe4e7,
+        #deecec,
+        #e5f4ec
     );
 }
 
 #article p {
-    text-align: center;
-    padding: 10px 20px;
+    text-align: justify;
+    padding: 10px 10%;
+    font-size:0.8em;
 }
 
 form {
@@ -438,8 +429,6 @@ select {
     width: 80%;
     margin: 10px 0px;
     padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(173, 218, 218);
 }
 
 textarea {
@@ -458,13 +447,14 @@ textarea {
 #button:hover {
     color: white;
     transition-duration: 0.8s;
+    box-shadow: grey 0.2em 0.2em 0.4em;
     background-image: linear-gradient(
-        to bottom,
-        #052e01,
-        #053a08,
-        #05470d,
-        #065412,
-        #076217
+        to right bottom,
+        #025750,
+        #046a5d,
+        #117e68,
+        #229272,
+        #36a67a
     );
 }
 
@@ -490,6 +480,7 @@ textarea {
     #adresse {
         flex-direction: column;
     }
+
 }
 /* Tablet Styles */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -518,4 +509,8 @@ textarea {
 
 iframe {
     border-radius: 10px;
+}
+
+#tarif img{
+    width:70px;
 }
