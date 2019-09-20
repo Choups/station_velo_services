@@ -416,6 +416,8 @@ form {
     flex-direction: column;
     padding: 20px;
     width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
 }
 
 input {
