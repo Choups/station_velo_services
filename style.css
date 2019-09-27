@@ -229,7 +229,7 @@ nav li {
 
 #fade{
 opacity: 0;
-transition-duration: 2s;
+transition-duration: 3s;
 }
 
 h1 {
@@ -437,6 +437,7 @@ form {
 
 input {
     width: 80%;
+    min-width: 200px;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;

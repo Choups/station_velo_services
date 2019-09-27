@@ -1,9 +1,11 @@
-/////////////////  MODAL FORM /////////////////////////////////////////
+/////  MODAL FORM /////////////////////////////////////
 
+/* DOM shortcuts */
 const buttonForm = document.getElementById('button-contact');
 const buttonSend = document.getElementById('button-send');
 const modalForm = document.getElementById('modal');
 
+/* Function */
 const modalFormFunction = () => {
     if (modalForm.style.display === "" || modalForm.style.display === "none") {
         modalForm.style.display = "block";        
@@ -12,16 +14,21 @@ const modalFormFunction = () => {
     }
  };
 
+/* EventListener */
 buttonForm.addEventListener('click', modalFormFunction);
 buttonSend.addEventListener('click', modalFormFunction);
+////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////
 
-//////////////////// TOP/BOTTOM NAVBAR AFTER SCROLL 100VH /////////////////
+
+///// TOP/BOTTOM NAVBAR AFTER SCROLL 100VH /////////////
+
+/* DOM shortcuts */
 const navBar = document.getElementById('nav');
 const carousel = document.getElementById('carousel');
 const foot = document.getElementById('foot');
 
+/* Function */
 const toggleNavbar = () => {
     if (window.scrollY > carousel.offsetHeight){
         navBar.style.marginTop = `${carousel.offsetHeight - 40}px`;
@@ -33,7 +40,15 @@ const toggleNavbar = () => {
         navBar.style.boxShadow = '0 0.3em 0.5em teal';
     }
 }
+
+/* EventListener */
 document.addEventListener('scroll', toggleNavbar);
-//////////////////////////// APPARITION DU TITRE //////////////////////////////
+/////////////////////////////////////////////////////////
+
+
+
+///// APPARITION DU TITRE ///////////////////////////////
+
+/* First loading */
 document.getElementById("fade").style.opacity = '1';
-///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
