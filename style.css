@@ -170,6 +170,16 @@ nav {
     transition-duration: 0.8s;
 }
 
+
+#logo-top{
+    display: none;
+    margin-right: auto;
+}
+
+#logo-top img{
+    transform: rotate(180deg);
+}
+
 .liens-nav,
 .liens-nav:visited {
     text-decoration: none;
