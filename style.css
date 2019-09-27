@@ -77,6 +77,10 @@ td,
 }
 
 /******************************** footer************************************************************/
+#foot{
+    margin-bottom: 0px;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -93,6 +97,8 @@ footer {
 }
 .ul_footer_reseaux li a img {
     margin: 10px;
+    width:70px;
+    height:70px;
 }
 /****************************  Debut Media queries tarif et footer *********************************/
 
@@ -134,12 +140,10 @@ footer {
 
 body {
     background-image: linear-gradient(
-        to top,
-        #4eaa52,
-        #3d9241,
-        #2c7b31,
-        #1a6521,
-        #054f11
+        to bottom,
+        teal,
+        rgb(2, 83, 83),
+        #000
     );
 }
 
@@ -152,12 +156,12 @@ body {
 }
 
 nav {
-    background-color: #111;
+    background-color: #000;
     position: fixed;
     width: 100vw;
     max-width: 1920px;
     z-index: 10;
-    box-shadow: 0.1em 0.1em 0.5em black;
+    box-shadow: 0 0.3em 0.5em teal;
 }
 
 .liens-logo img:hover {
@@ -221,6 +225,11 @@ nav li {
 #carousel img {
     width: 60px;
     height: 60px;
+}
+
+#fade{
+opacity: 0;
+transition-duration: 2s;
 }
 
 h1 {
@@ -410,6 +419,12 @@ h2 {
     font-size:0.8em;
 }
 
+#modal {
+    text-align: center;
+    display:none;
+}
+
+
 form {
     display: flex;
     align-items: center;
@@ -441,12 +456,12 @@ textarea {
     border-radius: 10px;
 }
 
-#button {
+.button {
     width: 30%;
     display: inline-block;
 }
 
-#button:hover {
+.button:hover {
     color: white;
     transition-duration: 0.8s;
     box-shadow: grey 0.2em 0.2em 0.4em;

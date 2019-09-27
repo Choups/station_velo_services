@@ -9,18 +9,19 @@
     </head>
 
     <body>
+            
         <div id="fond">
             <!------------------------------------------HEADER partie Alex   DEBUT********************************************************************************-->
 
             <header>
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li id="logo">
                             <a class="liens-logo" href="#top"
                                 ><img
                                     src="img/logo.png"
-                                    width="40px"
-                                    height="30px"
+                                    width="40"
+                                    height="30"
                                     alt="logo"
                             /></a>
                         </li>
@@ -40,7 +41,7 @@
                 </nav>
 
                 <div id="carousel">
-                    <h1>Station Vélo Services</h1>
+                    <h1 id="fade">Station Vélo Services</h1>
                     <div>
                         <a href="#services"
                             ><img src="img/down.gif" alt="flêche vers le bas"
@@ -135,8 +136,8 @@
                             <img
                                 src="img/juju1.jpg"
                                 alt="Julie"
-                                width="300px"
-                                height="300px"
+                                width="300"
+                                height="300"
                             />
                         </div>
                         <p>
@@ -463,7 +464,8 @@
             <!--FORM partie maxime DÉBUT*******************************************************************************************************************-->
 
             <form id="contact">
-                <h2>Nous contacter</h2>
+                <input class="button" id="button-contact" type="button" value="Nous contacter"/>
+                <div id="modal">
                 <input type="name" name="name" placeholder="Nom, prenom" />
                 <input
                     type="email"
@@ -484,7 +486,8 @@
                     rows="10"
                     placeholder="votre message"
                 ></textarea>
-                <input id="button" type="button" value="Envoyer" />
+                <input id="button-send" class="button" type="button" value="Envoyer" />
+                </div>
             </form>
 
             <section id="adresse">
@@ -521,7 +524,7 @@
             <!--FORM partie maxime DÉBUT*******************************************************************************************************************-->
 
             <!---Début footer------------------------------------------------------------------------------------------------------->
-            <footer>
+            <footer id='foot'>
                 <ul class="ul_footer_reseaux">
                     <li>
                         <a href="##"><img src="img/fb.png"/></a>
@@ -537,6 +540,12 @@
 
             <!---Fin footer---------------------------------------------------------------------------------------------------->
         </div>
+
+
+
         <script type= "text/javascript" src="scripts.js"></script>
+
+       
+        
     </body>
 </html>
