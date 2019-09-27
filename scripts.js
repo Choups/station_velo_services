@@ -1,4 +1,4 @@
-/////  MODAL FORM /////////////////////////////////////
+/////  MODAL FORM ///////////////////////////////////////
 
 /* DOM shortcuts */
 const buttonForm = document.getElementById('button-contact');
@@ -17,11 +17,11 @@ const modalFormFunction = () => {
 /* EventListener */
 buttonForm.addEventListener('click', modalFormFunction);
 buttonSend.addEventListener('click', modalFormFunction);
-////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
 
 
 
-///// TOP/BOTTOM NAVBAR AFTER SCROLLING 100VH /////////////
+///// TOP/BOTTOM NAVBAR AFTER SCROLLING 100VH ///////////
 
 /* DOM shortcuts */
 const navBar = document.getElementById('nav');
