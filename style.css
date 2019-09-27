@@ -182,6 +182,7 @@ nav {
 
 }
 
+
 .liens-nav,
 .liens-nav:visited {
     text-decoration: none;
@@ -199,7 +200,7 @@ nav {
         #046a5d,
         #117e68,
         #229272,
-        #36a67a
+        teal
     );
 }
 
@@ -266,7 +267,8 @@ h2 {
 }
 
 #jujudiv {
-    border-radius: 150px;
+    border-radius: 50%;
+    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/juju2.jpg);
@@ -278,7 +280,8 @@ h2 {
 }
 
 #maxdiv {
-    border-radius: 150px;
+    border-radius: 50%;
+    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/max2.jpg);
@@ -291,6 +294,7 @@ h2 {
 
 #alexdiv {
     border-radius: 150px;
+    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/alex2.jpg);
@@ -326,6 +330,8 @@ h2 {
 
 #staff article img {
     border-radius: 50%;
+    border: solid -1px teal;
+    margin: auto;
 }
 
 #staff div article:hover p {
@@ -540,6 +546,7 @@ textarea {
 
 iframe {
     border-radius: 10px;
+    border: solid 1px teal;
 }
 
 #tarif img{
