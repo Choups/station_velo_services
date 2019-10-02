@@ -243,7 +243,7 @@ nav li {
 
 #fade{
 opacity: 0;
-transition-duration: 3s;
+transition-duration: 1s;
 }
 
 h1 {
