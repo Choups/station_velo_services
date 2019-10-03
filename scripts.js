@@ -217,4 +217,3 @@ for (let i = 0; i < servicesArr.length; i++) {
     
     `;
 }
-

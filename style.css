@@ -17,9 +17,9 @@
     background-color: #fcf7ef;
 }
 
-section{
+section {
     padding-bottom: 80px;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 /*********************************** petit menu*****************************************************/
@@ -84,14 +84,21 @@ td,
 }
 
 /******************************** footer************************************************************/
-#foot{
+#foot {
     margin-bottom: 0px;
 }
 
 footer {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top, #000000, #111111, #1c1c1c, #272626, #323131);
+    background-image: linear-gradient(
+        to top,
+        #000000,
+        #111111,
+        #1c1c1c,
+        #272626,
+        #323131
+    );
     padding: 3px;
 }
 .ul_footer_reseaux {
@@ -104,8 +111,8 @@ footer {
 }
 .ul_footer_reseaux li a img {
     margin: 10px;
-    width:70px;
-    height:70px;
+    width: 70px;
+    height: 70px;
 }
 /****************************  Debut Media queries tarif et footer *********************************/
 
@@ -126,7 +133,7 @@ footer {
     .ul_footer_reseaux a {
         text-decoration: none;
     }
-    
+
     .tableau {
         display: flex;
         justify-content: space-around;
@@ -146,12 +153,7 @@ footer {
 }
 
 body {
-    background-image: linear-gradient(
-        to bottom,
-        teal,
-        rgb(2, 83, 83),
-        #000
-    );
+    background-image: linear-gradient(to bottom, teal, rgb(2, 83, 83), #000);
 }
 
 #fond {
@@ -177,18 +179,15 @@ nav {
     transition-duration: 0.8s;
 }
 
-
-#logo-top{
+#logo-top {
     display: none;
     margin-right: auto;
 }
 
-#logo-top img{
+#logo-top img {
     transform: rotate(180deg);
     filter: brightness(200%);
-
 }
-
 
 .liens-nav,
 .liens-nav:visited {
@@ -248,9 +247,9 @@ nav li {
     filter: brightness(200%);
 }
 
-#fade{
-opacity: 0;
-transition-duration: 1s;
+#fade {
+    opacity: 0;
+    transition-duration: 1s;
 }
 
 h1 {
@@ -392,8 +391,8 @@ h2 {
     flex-direction: column;
 }
 
-#services h3{
-    padding-top:10px;
+#services h3 {
+    padding-top: 10px;
 }
 
 #services article {
@@ -410,14 +409,14 @@ h2 {
         #e5f4ec
     );
     border-radius: 15px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 #article img {
     border-radius: 25% 10%;
-    width:80%;
-    margin-top:20px;
+    width: 80%;
+    margin-top: 20px;
     text-align: justify;
     border: solid white 1px;
 }
@@ -438,14 +437,13 @@ h2 {
 #article p {
     text-align: justify;
     padding: 10px 10%;
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
 #modal {
     text-align: center;
-    display:none;
+    display: none;
 }
-
 
 form {
     display: flex;
@@ -455,7 +453,6 @@ form {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto;
-    
 }
 
 input {
@@ -485,8 +482,8 @@ textarea {
     display: inline-block;
 }
 
-#button-contact{
-    margin-bottom:30px;
+#button-contact {
+    margin-bottom: 30px;
 }
 
 .button:hover {
@@ -525,7 +522,6 @@ textarea {
     #adresse {
         flex-direction: column;
     }
-
 }
 /* Tablet Styles */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -557,6 +553,6 @@ iframe {
     border: solid 1px teal;
 }
 
-#tarif img{
-    width:70px;
+#tarif img {
+    width: 70px;
 }
