@@ -9,15 +9,12 @@
     </head>
 
     <body>
-            
         <div id="fond">
-            <!------------------------------------------HEADER partie Alex   DEBUT********************************************************************************-->
-
             <header>
                 <nav id="nav">
                     <ul>
                         <li id="logo-top">
-                                <a class="liens-logo" href="#top"
+                            <a class="liens-logo" href="#top"
                                 ><img
                                     src="img/down.gif"
                                     width="40"
@@ -58,9 +55,6 @@
                     </div>
                 </div>
             </header>
-            <!------------------------------------------HEADER partie Alex   DEBUT********************************************************************************-->
-
-            <!------------------------------- SERVICES partie maxime DÉBUT ---------------------------------------->
 
             <section id="services">
                 <h2>Services</h2>
@@ -69,34 +63,28 @@
                 </div>
             </section>
 
-            <!------------------------------- SERVICES partie maxime FIN ---------------------------------------->
-
-            <!---STAFF partie Alex   DEBUT********************************************************************************************************************-->
-
             <section id="staff">
                 <h2>Le Staff</h2>
                 <div id="divwrap">
                     <!-- inneHTML des objets Staff deuis scripts.js -->
                 </div>
             </section>
-            <!--STAFF partie Alex   FIN********************************************************************************************************************-->
 
-            <!--TARIF-----------DEBUT----------------------------------------------------------------------------------------------------------------->
             <section id="tarif">
                 <h2>Tarifs</h2>
 
                 <ul>
                     <li class="li_tarif">
-                        <a href="#réparation"> <img src="img/outils.png"/></a>
+                        <a href="#réparation"> <img src="img/outils.png" alt="outils de réparation"/></a>
                     </li>
                     <li class="li_tarif">
-                        <a href="#vente"> <img src="img/vente.png"/></a>
+                        <a href="#vente"> <img src="img/vente.png" alt="vente de vélos"/></a>
                     </li>
                     <li class="li_tarif">
-                        <a href="#location"> <img src="img/location.png"/></a>
+                        <a href="#location"> <img src="img/location.png" alt="personne qui loue un vélo"/></a>
                     </li>
                     <li class="li_tarif">
-                        <a href="#cours"> <img src="img/cours.png"/></a>
+                        <a href="#cours"> <img src="img/cours.png" alt="atelier d'apprentissage"/></a>
                     </li>
                 </ul>
 
@@ -329,7 +317,7 @@
                             <td>35 min</td>
                         </tr>
                         <tr>
-                            <td class="catégorie">Frainage:</td>
+                            <td class="catégorie">Freinage:</td>
                             <td class="rien"></td>
                             <td class="rien"></td>
                         </tr>
@@ -361,32 +349,40 @@
 
             <!-- TARIF-------FIN--------------------------------------------->
 
-            <!--FORM partie maxime DÉBUT*******************************************************************************************************************-->
-
             <form id="contact">
-                <input class="button" id="button-contact" type="button" value="Nous contacter"/>
-                <div id="modal">
-                <input type="name" name="name" placeholder="Nom, prenom" />
                 <input
-                    type="email"
-                    name="email"
-                    placeholder="Adresse mail"
-                    required
+                    class="button"
+                    id="button-contact"
+                    type="button"
+                    value="Nous contacter"
                 />
-                <select name="Raison" id="">
-                    <option value="">Réparation</option>
-                    <option value="">Achat</option>
-                    <option value="">Location</option>
-                    <option value="">Cours</option>
-                </select>
-                <textarea
-                    name="message"
-                    id="textarea"
-                    cols="30"
-                    rows="10"
-                    placeholder="votre message"
-                ></textarea>
-                <input id="button-send" class="button" type="button" value="Envoyer" />
+                <div id="modal">
+                    <input type="name" name="name" placeholder="Nom, prenom" />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Adresse mail"
+                        required
+                    />
+                    <select name="Raison" id="">
+                        <option value="">Réparation</option>
+                        <option value="">Achat</option>
+                        <option value="">Location</option>
+                        <option value="">Cours</option>
+                    </select>
+                    <textarea
+                        name="message"
+                        id="textarea"
+                        cols="30"
+                        rows="10"
+                        placeholder="votre message"
+                    ></textarea>
+                    <input
+                        id="button-send"
+                        class="button"
+                        type="button"
+                        value="Envoyer"
+                    />
                 </div>
             </form>
 
@@ -421,10 +417,7 @@
                 </div>
             </section>
 
-            <!--FORM partie maxime DÉBUT*******************************************************************************************************************-->
-
-            <!---Début footer------------------------------------------------------------------------------------------------------->
-            <footer id='foot'>
+            <footer id="foot">
                 <ul class="ul_footer_reseaux">
                     <li>
                         <a href="##"><img src="img/fb.png"/></a>
@@ -437,15 +430,8 @@
                     </li>
                 </ul>
             </footer>
-
-            <!---Fin footer---------------------------------------------------------------------------------------------------->
         </div>
 
-
-
-        <script type= "text/javascript" src="scripts.js"></script>
-
-       
-        
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>

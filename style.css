@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(1, 97, 97);
 }
 
 /*Mise en place*/
@@ -13,6 +14,12 @@
     align-content: center;
     justify-content: center;
     margin-bottom: 20px;
+    background-color: #fcf7ef;
+}
+
+section{
+    padding-bottom: 80px;
+    padding-top:20px;
 }
 
 /*********************************** petit menu*****************************************************/
@@ -39,20 +46,20 @@ table {
     padding-top: 10px;
     width: 90%;
     margin-left: 5%;
+    border-spacing: 5%;
 }
 
 .catégorie {
     font-weight: bold;
     text-align: left;
     padding: 6px;
-    border-radius: 20px;
 }
 
 td,
 .titre {
     border: 1px solid teal;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .rien,
 .catégorie {
@@ -68,11 +75,11 @@ td,
 }
 
 .espace {
-    background-color: rgb(173, 218, 218);
+    background-color: rgb(196, 218, 216);
 }
 
 .titre {
-    background-color: rgb(173, 218, 218);
+    background-color: rgb(208, 230, 228);
     width: 23%;
 }
 
@@ -148,7 +155,7 @@ body {
 }
 
 #fond {
-    background-color: white;
+    background-color: #effcfb;
     margin: auto;
     max-width: 1920px;
     min-width: 300px;
@@ -156,7 +163,7 @@ body {
 }
 
 nav {
-    background-color: #000;
+    background-color: black;
     position: fixed;
     width: 100vw;
     max-width: 1920px;
@@ -268,7 +275,6 @@ h2 {
 
 #jujudiv {
     border-radius: 50%;
-    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/juju2.jpg);
@@ -281,7 +287,6 @@ h2 {
 
 #maxdiv {
     border-radius: 50%;
-    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/max2.jpg);
@@ -294,7 +299,6 @@ h2 {
 
 #alexdiv {
     border-radius: 150px;
-    border: solid 1px teal;
     width: 300px;
     height: 300px;
     background-image: url(img/alex2.jpg);
@@ -315,6 +319,7 @@ h2 {
 
 #staff article p {
     padding: 10px;
+    border: solid 3px white;
     border-radius: 40px;
     background-image: linear-gradient(
         to bottom,
@@ -325,7 +330,6 @@ h2 {
         #e5f4ec
     );
     box-shadow: 0.1em 0.1em 0.2em grey;
-    color: rgb(1, 97, 97);
 }
 
 #staff article img {
@@ -380,6 +384,7 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #fcf7ef;
 }
 
 #article {
@@ -396,7 +401,6 @@ h2 {
     width: 80%;
     text-align: center;
     margin: 20px auto;
-    color: teal;
     background-image: linear-gradient(
         to right bottom,
         #d4d4d4,
@@ -420,7 +424,6 @@ h2 {
 
 #article article:hover {
     transform: scale(1.1);
-    color: teal;
     transition-duration: 0.8s;
     background-image: linear-gradient(
         to left top,
@@ -452,6 +455,7 @@ form {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto;
+    
 }
 
 input {
@@ -481,6 +485,10 @@ textarea {
     display: inline-block;
 }
 
+#button-contact{
+    margin-bottom:30px;
+}
+
 .button:hover {
     color: white;
     transition-duration: 0.8s;
@@ -499,8 +507,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10px;
-    padding: 10px 0px;
+    padding: 20px 0px;
+    background-color: #fcf7ef;
 }
 
 #adresse div {
