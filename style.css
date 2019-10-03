@@ -170,7 +170,7 @@ nav {
     width: 100vw;
     max-width: 1920px;
     z-index: 10;
-    box-shadow: 0 0.3em 0.5em teal;
+    box-shadow: 0 0.3em 0.5em rgb(1, 97, 97);
 }
 
 .liens-logo img:hover {
@@ -253,11 +253,12 @@ nav li {
 }
 
 h1 {
-    color: white;
+    color: #fcf7ef;
     margin: auto;
     font-size: 3rem;
-    color: white;
-    text-shadow: teal 0.2em 0.2em 0.4em;
+    text-shadow: black 0.2em 0.2em 0.4em;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: teal;
 }
 
 h2 {
@@ -409,6 +410,7 @@ h2 {
         #e5f4ec
     );
     border-radius: 15px;
+    border: solid 3px white;
     padding-bottom: 10px;
     box-shadow: 0.1em 0.1em 0.2em grey;
 }
@@ -478,8 +480,11 @@ textarea {
 }
 
 .button {
+    color: white;
     width: 30%;
     display: inline-block;
+    box-shadow: grey 0.2em 0.2em 0.4em;
+    background-image: linear-gradient(to right, rgb(1, 105, 105), teal);
 }
 
 #button-contact {
@@ -487,17 +492,9 @@ textarea {
 }
 
 .button:hover {
-    color: white;
     transition-duration: 0.8s;
-    box-shadow: grey 0.2em 0.2em 0.4em;
-    background-image: linear-gradient(
-        to right bottom,
-        #025750,
-        #046a5d,
-        #117e68,
-        #229272,
-        #36a67a
-    );
+    box-shadow: rgb(0, 147, 173) 0.2em 0.4em 0.4em;
+    background-image: linear-gradient(to left, rgb(1, 105, 105), teal);
 }
 
 #adresse {
@@ -549,7 +546,7 @@ textarea {
 }
 
 iframe {
-    border-radius: 10px;
+    border-radius: 20px;
     border: solid 1px teal;
 }
 

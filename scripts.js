@@ -39,7 +39,7 @@ const toggleNavbar = () => {
         logoUp.style.display = "flex";
     } else {
         navBar.style.marginTop = "";
-        navBar.style.boxShadow = "0 0.3em 0.5em teal";
+        navBar.style.boxShadow = "0 0.3em 0.5em rgb(1, 97, 97)";
         logoDefault.style.display = "flex";
         logoUp.style.display = "none";
     }
