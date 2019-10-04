@@ -493,6 +493,7 @@ textarea {
 
 .button:hover {
     transition-duration: 0.8s;
+    cursor: pointer;
     box-shadow: grey 0.2em 0.2em 0.4em;
 }
 
