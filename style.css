@@ -49,7 +49,7 @@ table {
     border-spacing: 5%;
 }
 
-.catégorie {
+.categorie {
     font-weight: bold;
     text-align: left;
     padding: 6px;
@@ -62,13 +62,13 @@ td,
     border-radius: 7px;
 }
 .rien,
-.catégorie {
+.categorie {
     border: none;
 }
 
 .espace,
 .normal_td,
-.catégorie {
+.categorie {
     padding-left: 15px;
     text-align: left;
     margin-left: 5px;
@@ -120,7 +120,7 @@ footer {
 
 @media screen and (min-width: 769px) {
     .titre,
-    .catégorie,
+    .categorie,
     .espace,
     .normal_td,
     td {
@@ -175,7 +175,6 @@ nav {
 
 .liens-logo img:hover {
     filter: grayscale(1) brightness(200%);
-    -webkit-filter: grayscale(1) brightness(200%);
     transition-duration: 0.8s;
 }
 
