@@ -31,7 +31,7 @@ const logoUp = document.getElementById("logo-top");
 /* Function */
 const toggleNavbar = () => {
     if (window.scrollY >= carousel.offsetHeight) {
-        navBar.style.marginTop = `${carousel.offsetHeight - 40}px`;
+        navBar.style.marginTop = `calc(100vh - 40px)`;
         foot.style.marginBottom = "40px";
         navBar.style.transitionDuration = "1s";
         navBar.style.boxShadow = "0 -0.3em 0.5em black";

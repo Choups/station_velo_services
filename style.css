@@ -480,11 +480,11 @@ textarea {
 }
 
 .button {
-    color: white;
     width: 30%;
     display: inline-block;
-    box-shadow: grey 0.2em 0.2em 0.4em;
-    background-image: linear-gradient(to right, rgb(1, 105, 105), teal);
+    box-shadow: darkgrey 0.2em 0.2em 0.4em;
+    background-color: rgb(208, 230, 228);
+    border: solid 2px white;
 }
 
 #button-contact {
@@ -493,8 +493,7 @@ textarea {
 
 .button:hover {
     transition-duration: 0.8s;
-    box-shadow: rgb(0, 147, 173) 0.2em 0.4em 0.4em;
-    background-image: linear-gradient(to left, rgb(1, 105, 105), teal);
+    box-shadow: grey 0.2em 0.2em 0.4em;
 }
 
 #adresse {
