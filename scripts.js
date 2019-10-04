@@ -67,7 +67,7 @@ class Staff {
 
 const jujuStaff = new Staff(
     "Julie",
-    "juju1.jpg",
+    "juju.jpg",
     `« Pratiquant le vélo seule (compét') ou en
 groupe depuis toujours, c’est toujours un
 plaisir de conseiller les érudits ainsi que les
@@ -78,7 +78,7 @@ novices entrant chez Vélo station service. »`,
 
 const maxStaff = new Staff(
     "Maxime",
-    "max1.jpg",
+    "max.jpg",
     `« En réparant leur 2 roues je me dis que je
 leur permet de continuer leur chemin, de
 continuer a découvrir les villes et les
@@ -90,7 +90,7 @@ libre »`,
 
 const alexStaff = new Staff(
     "Alex",
-    "alex1.jpg",
+    "alex.jpg",
     `« Le velo est pour moi une philosophie de vie.
 Station vélo service est un moyen de partager
 cette philosophie, à tous les amoureux de la
